@@ -1,0 +1,32 @@
+"Certo che se riusciste anche mettere il colore nel nome nel titolo del prodotto reale sarebbe meglio, altrimenti chiedo a mia nonna, solo che ore è in Nepal"
+
+Implementate un templating nel nome e nelle descrizione
+
+Esempio:
+
+csv in ingresso
+
+TAGLIA
+T1,S,M,L,XL,XXL,3XL
+T2,38..45,50..52
+COLORE
+C1,Bianca,Nera
+C2,Rossa,Verde
+PRODOTTO
+TSHUSA, maglietta {COLORE} stile fruit USA, maglietta bellissima {COLORE} di cui non potrete fare a meno, 10.0, T1, C1
+TSH, maglietta {COLORE} stile fruit, maglietta {COLORE} ancora più bella di cui non potrete fare a meno, 12.0, T2, C2
+
+csv in uscita
+
+sku, tipo, nome, descrizione, prezzo, taglia/sku_sollegati
+TSHUSA-S-Bianca, reale, maglietta Bianca stile fruit USA, maglietta bellissima Bianca di cui non potrete fare a meno, 10.0, S, Bianca
+TSHUSA-S-Nera, reale, maglietta Nera stile fruit USA, maglietta bellissima Nera di cui non potrete fare a meno, 10.0, S, Nera
+...
+TSHUSA-3XL-Bianca, reale, maglietta Bianca bianca stile fruit, maglietta bianca bellissima Bianca di cui non potrete fare a meno, 10.0, 3XL
+TSHUSA-3XL-Nera, reale, maglietta Nera bianca stile fruit, maglietta bianca bellissima Nera di cui non potrete fare a meno, 10.0, 3XL
+TSHUSA, raggruppamento, maglietta stile fruit USA, maglietta bellissima di cui non potrete fare a meno, 10.0, TSHWHT-S-Bianca|TSHWHT-S-Nera|...|TSHWHT-3XL-Nera
+TSH-38-Rossa, reale, maglietta Rossa stile fruit, maglietta Rossa ancora più bella di cui non potrete fare a meno, 12.0, 38, Rossa
+TSH-38-Verde, reale, maglietta Verde stile fruit, maglietta Verde ancora più bella di cui non potrete fare a meno, 12.0, 38, Verde
+...
+TSH-52-Verde, reale, maglietta Verde stile fruit, maglietta Verde ancora più bella di cui non potrete fare a meno, 12.0, 52, Verde
+TSH, raggruppamento, maglietta stile fruit, maglietta ancora più bella di cui non potrete fare a meno, 12.0, TSH-38-Rossa|TSH-38-Verde|...|TSH-52-Verde

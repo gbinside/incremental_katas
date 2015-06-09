@@ -1,0 +1,22 @@
+Il nostro nuovo ed importantissimo cliente non vuole fare fatica per creare il catalogo del suo nuovo ecommerce di vestiti.
+
+Tutto quello che può dare è un elenco di prodotti base, ed un elenco di taglie in cui tale prodotto è disponibile.
+
+Dato un csv in ingresso, il nostro compito in questo primo passaggio è di creare un file csv con tutti i prodotti esplosi combinando i prodotti base con le taglie.
+
+Esempio:
+
+csv in ingresso
+sku, nome, descrizione, prezzo, taglia
+TSHWHT, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, S|M|L|XL|XXL|3XL
+
+csv in uscita
+sku, nome, descrizione, prezzo, taglia
+TSHWHT-S, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, S
+TSHWHT-M, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, M
+TSHWHT-L, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, L
+TSHWHT-XL, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, XL
+TSHWHT-XXL, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, XXL
+TSHWHT-3XL, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, 3XL
+
+Lo sku in uscita puo essere generato come volete, quello qui presentato è solo un esempio, ma deve essere parlante ed univoco.

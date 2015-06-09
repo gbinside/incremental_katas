@@ -1,0 +1,30 @@
+Maaaaaaaa alla fine la maglietta è una... ha solo 2 colori diversi, poi aggiungiamone anche una altra.
+
+Esempio:
+
+csv in ingresso
+
+TAGLIA
+T1,S,M,L,XL,XXL,3XL
+T2,38..45,50..52
+COLORE
+C1,Bianca,Nera
+C2,Rossa,Verde
+PRODOTTO
+TSHUSA, maglietta stile fruit USA, maglietta bellissima di cui non potrete fare a meno, 10.0, T1, C1
+TSH, maglietta stile fruit, maglietta ancora più bella di cui non potrete fare a meno, 12.0, T2, C2
+
+csv in uscita
+
+sku, tipo, nome, descrizione, prezzo, taglia/sku_sollegati
+TSHUSA-S-Bianca, reale, maglietta stile fruit USA, maglietta bellissima di cui non potrete fare a meno, 10.0, S, Bianca
+TSHUSA-S-Nera, reale, maglietta stile fruit USA, maglietta bellissima di cui non potrete fare a meno, 10.0, S, Nera
+...
+TSHUSA-3XL-Bianca, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, 3XL
+TSHUSA-3XL-Nera, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, 3XL
+TSHUSA, raggruppamento, maglietta stile fruit USA, maglietta bellissima di cui non potrete fare a meno, 10.0, TSHWHT-S-Bianca|TSHWHT-S-Nera|...|TSHWHT-3XL-Nera
+TSH-38-Rossa, reale, maglietta stile fruit, maglietta ancora più bella di cui non potrete fare a meno, 12.0, 38, Rossa
+TSH-38-Verde, reale, maglietta stile fruit, maglietta ancora più bella di cui non potrete fare a meno, 12.0, 38, Verde
+...
+TSH-52-Verde, reale, maglietta stile fruit, maglietta ancora più bella di cui non potrete fare a meno, 12.0, 52, Verde
+TSH, raggruppamento, maglietta stile fruit, maglietta ancora più bella di cui non potrete fare a meno, 12.0, TSH-38-Rossa|TSH-38-Verde|...|TSH-52-Verde

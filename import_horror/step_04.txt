@@ -1,0 +1,37 @@
+Il cliente perde il pelo, ma non il vizio.
+
+Il cliente ci manda a dire: "Una piccola modifica, per una ditta come la vostra non sarà un problema, altrimenti lo farei fare a mia nonna, ma è a sciare sull'everest. Posso specificare le taglie numeriche con un intervallo, del tipo 38..45, 50..52, estremi inclusi ovviamente"
+
+Esempio:
+
+csv in ingresso
+
+TAGLIA
+T1,S,M,L,XL,XXL,3XL
+T2,38..45,50..52
+PRODOTTO
+TSHWHT, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, T1
+TSHBLK, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, T2
+
+csv in uscita
+sku, tipo, nome, descrizione, prezzo, taglia/sku_sollegati
+TSHWHT-S, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, S
+TSHWHT-M, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, M
+TSHWHT-L, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, L
+TSHWHT-XL, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, XL
+TSHWHT-XXL, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, XXL
+TSHWHT-2XL, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, 2XL
+TSHWHT-3XL, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, 3XL
+TSHWHT, raggruppamento, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, TSHWHT-S|TSHWHT-M|TSHWHT-L|TSHWHT-XL|TSHWHT-XXL|TSHWHT-3XL|TSHWHT-4XL
+TSHBLK-38, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 38
+TSHBLK-39, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 39
+TSHBLK-40, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 40
+TSHBLK-41, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 41
+TSHBLK-42, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 42
+TSHBLK-43, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 43
+TSHBLK-44, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 44
+TSHBLK-45, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 45
+TSHBLK-50, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 50
+TSHBLK-51, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 51
+TSHBLK-52, reale, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, 52
+TSHBLK, maglietta nera stile fruit, maglietta nera ancora più bella di cui non potrete fare a meno, 12.0, TSHBLK-38|TSHBLK-39|TSHBLK-40|TSHBLK-41|TSHBLK-42|TSHBLK-43|TSHBLK-44|TSHBLK-45|TSHBLK-50|TSHBLK-51|TSHBLK-52

@@ -1,0 +1,19 @@
+Fantastico, il cliente è contento, ma vuole fare ancora meno.
+
+Ora dobbiamo aggiungere all'output anche una riga con il prodotto finto che raggruppa tutti gli altri.
+
+Esempio:
+
+csv in ingresso
+sku, nome, descrizione, prezzo, taglia
+TSHWHT, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, S|M|L|XL|XXL|3XL
+
+csv in uscita
+sku, tipo, nome, descrizione, prezzo, taglia/sku_sollegati
+TSHWHT-S, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, S
+TSHWHT-M, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, M
+TSHWHT-L, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, L
+TSHWHT-XL, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, XL
+TSHWHT-XXL, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, XXL
+TSHWHT-3XL, reale, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, 3XL
+TSHWHT, raggruppamento, maglietta bianca stile fruit, maglietta bianca bellissima di cui non potrete fare a meno, 10.0, TSHWHT-S|TSHWHT-M|TSHWHT-L|TSHWHT-XL|TSHWHT-XXL|TSHWHT-3XL

@@ -1,0 +1,25 @@
+"Beh, per una ditta come la vostra generalizzare gli attributi non sarà un problema, altrimenti c'è sempre...."
+
+Implementate La logica per un qualsiasi attributo in forma di lista
+
+Esempio:
+
+csv in ingresso
+
+TAGLIA
+T1,S,M,L,XL,XXL,3XL
+T2,38..45,50..52
+COLORE
+C1,Bianca,Nera
+C2,Rossa,Verde
+CUCCUNI
+CU1,Pluf,Trick,Track
+PRODOTTO
+TSHUSA, maglietta {COLORE} stile fruit USA, maglietta bellissima {COLORE} di cui non potrete fare a meno. Firmata {CUCCUNI}, 10.0, T1, C1, CU1
+TSH, maglietta {COLORE} stile fruit, maglietta {COLORE} ancora più bella di cui non potrete fare a meno, 12.0, T2, C2
+
+csv in uscita
+
+sku, tipo, nome, descrizione, prezzo, taglia, colore, cuccuni
+TSHUSA-S-Bianca-Pluf, reale, maglietta Bianca stile fruit USA, maglietta bellissima Bianca di cui non potrete fare a meno. Firmata Pluf, 10.0, S, Bianca, Pluf
+...
