@@ -1,6 +1,8 @@
 Indovinate? Il cliente vuole fare ancora meno.
 
-Il file di input si complica non essendo più un csv standard, ma diventa uno strano ibrido; ora le taglie ci vengono passate in testa subito e non replicate su ogni singolo prodotto. Sul prodotto troveremo un puntatore a quale lista di taglie usare.
+Il file di input si complica non essendo più un csv standard, ma diventa uno strano ibrido; ora le taglie ci vengono 
+passate in testa subito e non replicate su ogni singolo prodotto. Sul prodotto troveremo un puntatore a quale lista 
+di taglie usare.
 
 Esempio:
 
