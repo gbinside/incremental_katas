@@ -1,4 +1,5 @@
-"Certo che se riusciste anche mettere il colore nel nome nel titolo del prodotto reale sarebbe meglio, altrimenti chiedo a mia nonna, solo che ore è in Nepal"
+"Certo che se riusciste anche mettere il colore nel nome nel titolo del prodotto reale sarebbe meglio, altrimenti chiedo 
+a mia nonna, solo che ore è in Nepal"
 
 Implementate un templating nel nome e nelle descrizione
 
