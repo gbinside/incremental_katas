@@ -1,6 +1,8 @@
 Il cliente perde il pelo, ma non il vizio.
 
-Il cliente ci manda a dire: "Una piccola modifica, per una ditta come la vostra non sarà un problema, altrimenti lo farei fare a mia nonna, ma è a sciare sull'everest. Posso specificare le taglie numeriche con un intervallo, del tipo 38..45, 50..52, estremi inclusi ovviamente"
+Il cliente ci manda a dire: "Una piccola modifica, per una ditta come la vostra non sarà un problema, altrimenti lo 
+farei fare a mia nonna, ma è a sciare sull'everest. Posso specificare le taglie numeriche con un intervallo, del 
+tipo 38..45, 50..52, estremi inclusi ovviamente"
 
 Esempio:
 
